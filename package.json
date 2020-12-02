@@ -1,0 +1,23 @@
+{
+  "name": "progresssive-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mp5maker/progresssive-web-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mp5maker/progresssive-web-app/issues"
+  },
+  "homepage": "https://github.com/mp5maker/progresssive-web-app#readme",
+  "dependencies": {
+    "create-vtecx-app": "^1.0.3"
+  }
+}

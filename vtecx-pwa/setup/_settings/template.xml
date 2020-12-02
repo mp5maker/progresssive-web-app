@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entry>
+<content type="text/html">
+</content>
+  <contributor>
+    <uri>urn:vte.cx:acl:/_group/$admin,CRUD</uri>
+  </contributor>
+  <contributor>
+    <uri>urn:vte.cx:acl:+,R</uri>
+  </contributor>
+  <link href="/_settings/template" rel="self"/>
+  <rights>
+</rights>
+</entry>

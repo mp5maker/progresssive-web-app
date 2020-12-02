@@ -1,0 +1,15 @@
+// 既定の設定とユーザー設定を上書きするには、このファイル内に設定を挿入します
+{
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": false,
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {"language": "typescript", "autoFix": true },
+    {"language": "typescriptreact", "autoFix": true }
+  ]
+}
