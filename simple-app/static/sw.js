@@ -40,3 +40,7 @@ self.addEventListener('activate', (event) => {
 
     event.waitUntil(caches.keys().then(onSuccessCachesKeys))
 })
+
+self.addEventListener('fetch', (event) => {
+    console.log("SW Fetch Event: Is in the process");
+})
