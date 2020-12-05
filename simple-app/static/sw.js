@@ -1,6 +1,7 @@
 const CACHE_LIST = [
     "/",
     "/index.html",
+    "/add-to-your-home-screen.js",
     "/main.js",
     "/main.css",
     "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css",
