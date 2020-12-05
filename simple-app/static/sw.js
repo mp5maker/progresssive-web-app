@@ -4,6 +4,7 @@ const CACHE_LIST = [
     "/main.js",
     "/main.css",
     "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js"
 ];
 
 const STATIC_CACHE_VERSION = `static-v1-${new Date().getTime()}`

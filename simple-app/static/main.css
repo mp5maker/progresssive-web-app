@@ -19,3 +19,22 @@ body > .container-fluid ~ footer {
     text-align: center;
     border-top: 1px solid var(--light);
 }
+
+.posts {
+    padding: 12px;
+}
+
+.post {
+    padding: 12px;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.post .post-title {
+    font-size: 18px;
+}
+
+.post .post-body {
+    font-size: 12px;
+}
