@@ -2,6 +2,7 @@ const path = require('path')
 const vtecxutil = require('vtecxutil')
 const writeFilePlugin = require('write-file-webpack-plugin')
 const confy = require('confy')
+const copyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, argv) => {
   let target
@@ -22,6 +23,24 @@ module.exports = (env, argv) => {
     }
     target = target.substr(target.length - 1) === '/' ? target.substr(0, target.length - 1) : target
   }
+
+  const copiedPlugin = new copyPlugin({
+    patterns: [
+      {
+        from: path.join(__dirname, "src/pwa/sw.js"),
+        to: path.join(__dirname, "dist")
+      },
+      {
+        from: path.join(__dirname, "src/pwa/manifest.json"),
+        to: path.join(__dirname, "dist")
+      },
+      {
+        from: path.join(__dirname, "src/img"),
+        to: path.join(__dirname, "dist/img")
+      }
+    ]
+  });
+
   return {
     mode: argv.mode ? 'development' : 'production',
     entry: './src' + env.entry,
@@ -74,8 +93,14 @@ module.exports = (env, argv) => {
         : {},
     plugins:
       argv.mode === 'production'
-        ? [new vtecxutil.uploaderPlugin(env.entry)]
-        : [new writeFilePlugin(), new vtecxutil.uploaderPlugin(env.entry)],
+        ? [
+            new vtecxutil.uploaderPlugin(env.entry),
+            copiedPlugin
+        ] : [
+          new writeFilePlugin(),
+          new vtecxutil.uploaderPlugin(env.entry),
+          copiedPlugin
+        ],
     devtool: argv.mode === 'production' ? '' : 'source-map'
   }
 }

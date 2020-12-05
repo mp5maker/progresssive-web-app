@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed>
+  <entry>
+      <contributor>
+        <uri>urn:vte.cx:acl:/_group/$admin,CRUD</uri>
+      </contributor>
+      <contributor>
+          <!-- ACL settings that allow all users to get(*) -->
+        <uri>urn:vte.cx:acl:*,R.</uri>
+      </contributor>
+      <link rel="self" href="/_html/manifest.json" />
+  </entry>
+  <entry>
+      <contributor>
+        <uri>urn:vte.cx:acl:/_group/$admin,CRUD</uri>
+      </contributor>
+      <contributor>
+          <!-- ACL settings that allow all users to get(*) -->
+        <uri>urn:vte.cx:acl:*,R.</uri>
+      </contributor>
+      <link rel="self" href="/_html/sw.js" />
+  </entry>
+</feed>
